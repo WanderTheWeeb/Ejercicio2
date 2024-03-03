@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Team Crew</title>
+</head>
+<body>
+  <section class="head">
+    <h1>The Team Crew</h1>
+    <div class="description">
+      <h2>WHO WE ARE</h2>
+      <p>We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.</p>
+    </div>
+  </section>
+  <section class="team">
+    <div class="caption">
+      <img src="photo1.png" alt="photo1">
+      <p class="role">Product Owner</p>
+      <p class="name">Bill Mahoney</p>
+    </div>
+    <div class="caption">
+      <img src="photo2.png" alt="photo2">
+      <p class="role">Art Director</p>
+      <p class="name">Saba Cabrera</p>
+    </div>
+    <div class="caption">
+      <img src="photo3.png" alt="photo3">
+      <p class="role">Tech Lead</p>
+      <p class="name">Shae Le </p>
+    </div>
+    <div class="caption">
+      <img src="photo4.png" alt="photo4">
+      <p class="role">UX Designer</p>
+      <p class="name">Skylah Lu</p>
+    </div>
+    <div class="caption">
+      <img src="photo5.png" alt="photo5">
+      <p class="role">Developer</p>
+      <p class="name">Griff Richards</p>
+    </div>
+    <div class="caption">
+      <img src="photo6.png" alt="photo6">
+      <p class="role">Developer</p>
+      <p class="name">Stan John</p>
+  </section>
+</body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  h1{
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+  }
+
+  h2{
+    font-weight: 600;
+  }
+
+  img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+
+  .head{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 280px 100px 280px;
+  }
+
+  .description{
+    width: 400px;
+  }
+
+  .name{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000;
+    line-height: 27px;
+  }
+
+  .role{
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15.9px;
+    writing-mode: vertical-rl;
+  }
+
+  .caption{
+    width: 280px;
+    display: grid;
+    grid-template-areas: 
+    'photo1 role'
+    'name name';
+  }
+
+  .team{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding: 0 250px;
+    gap: 100px 0px;
+  }
+
+  .caption:nth-child(2){
+  position: relative;
+    top: 120px;
+  }
+
+  .caption:nth-child(5)
+  {
+    position: relative;
+    top: 240px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    
+    .head{
+      flex-direction: column;
+      align-items: center;
+      margin: 50px 0 100px 0;
+      gap: 50px 0;
+      padding: 0 150px;
+    }
+    
+    .description{
+      width: 100%;
+      text-align: center;
+    }
+    .team{
+      padding: 0 50px;
+    }
+
+    .caption:nth-child(2){
+      top: 0;
+    }
+
+    .caption:nth-child(5){
+      top: 0;
+    }
+  }
+   
+  @media screen and (max-width: 1012px){
+    img{
+      width: 200px;
+      height: 300px;
+    }
+    .caption{
+      width: 220px;
+    }
+    
+  }
+
+  @media screen and (max-width: 768px) {
+      
+      .head{
+        padding: 0px 80px;
+        align-items: start;
+      }
+
+      img{
+        width: 200px;
+        height: 300px;
+      }
+
+      .caption{
+        width: 220px;
+      }
+
+      h1{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+      }
+
+      .description{
+        text-align: start;
+        width: 70%;
+      }
+
+      .team{
+        margin-top: -60px;
+      }
+
+      .caption:nth-child(2){
+        top: 120px;
+      }
+      .caption:nth-child(4){
+        position: relative;
+        top: 120px;
+      }
+      .caption:nth-child(6){
+        position: relative;
+        top: 120px;
+      }
+    }
+
+    @media screen and (max-width: 540px) {
+
+      .head{
+        padding: 0px 50px;
+      }
+      img{
+        width: 150px;
+        height: 250px;
+      }
+      .caption{
+        width: 180px;
+      }
+      .description{
+        width: 100%;
+      }
+
+    @media screen and (max-width: 458px){
+      .head{
+        padding: 0px 30px;
+      }
+
+      img{
+        width: 150px;
+        height: 250px;
+      }
+
+      .team{
+        padding: 10px 10px;
+        justify-content: center;
+        gap: 50px 0;
+      }
+
+      .caption:nth-child(2){
+        top: 0;
+      }
+      .caption:nth-child(4){
+        top: 0;
+      }
+      .caption:nth-child(6){
+        top: 0;
+      }
+      
+    }
+  }
+</style>
