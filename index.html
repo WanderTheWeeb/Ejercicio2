@@ -224,33 +224,35 @@
     @media screen and (max-width: 540px) {
 
       .head{
-        padding: 0px 50px;
-      }
-      img{
-        width: 150px;
-        height: 250px;
-      }
-      .caption{
-        width: 180px;
-      }
-      .description{
-        width: 100%;
-      }
-
-    @media screen and (max-width: 458px){
-      .head{
-        padding: 0px 30px;
-      }
-
-      img{
-        width: 150px;
-        height: 250px;
+        padding: 0px 40px;
       }
 
       .team{
-        padding: 10px 10px;
+        justify-content: flex-start;
+        margin-top: -90px;
+        padding: 0px 40px;
+        gap: 10px 0;
+      }
+
+      .caption{
+        transform: scale(0.8);
+        width: 180px;        
+      }
+
+    .caption:nth-child(2){
+      top: 120px;
+    }
+    .caption:nth-child(4){
+      top: 120px;
+    }
+    .caption:nth-child(6){
+      top: 120px;
+    }
+
+    @media screen and (max-width: 441px){
+
+      .team{
         justify-content: center;
-        gap: 50px 0;
       }
 
       .caption:nth-child(2){
@@ -259,10 +261,9 @@
       .caption:nth-child(4){
         top: 0;
       }
-      .caption:nth-child(6){
-        top: 0;
-      }
-      
     }
-  }
+    .caption:nth-child(6){
+      top: 0;
+    }
+}
 </style>
